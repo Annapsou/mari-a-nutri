@@ -321,6 +321,9 @@ export default function App() {
               className="w-full h-full object-cover object-center lg:object-right opacity-60 md:opacity-75"
               width={1920}
               height={800}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
             {/* Elegant Scrim Gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#1E312A] via-[#1E312A]/85 to-[#1E312A]/40" />
