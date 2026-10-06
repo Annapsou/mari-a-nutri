@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function() {
+      try {
+        var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+        var activeFetch = originalFetch;
+        var desc = {
+          get: function() { return activeFetch; },
+          set: function(v) { activeFetch = v; },
+          configurable: true,
+          enumerable: true
+        };
+        Object.defineProperty(window, 'fetch', desc);
+        if (typeof Window !== 'undefined' && Window.prototype) {
+          try {
+            Object.defineProperty(Window.prototype, 'fetch', desc);
+          } catch (e1) {}
+        }
+        if (typeof globalThis !== 'undefined' && globalThis !== window) {
+          try {
+            Object.defineProperty(globalThis, 'fetch', desc);
+          } catch (e2) {}
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Nutricionista em Natal para Emagrecimento | Mari a Nutri</title>
+  <meta name="description" content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!">
+  <link rel="canonical" href="https://marianutri.site/">
+
+  <!-- Favicons (Logo Oficial Mari a Nutri) -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- OpenGraph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nutricionista em Natal para Emagrecimento | Mari a Nutri">
+  <meta property="og:description" content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!">
+  <meta property="og:image" content="https://marianutri.site/assets/img/hero-bg.webp">
+  <meta property="og:url" content="https://marianutri.site/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Mari a Nutri">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nutricionista em Natal para Emagrecimento | Mari a Nutri">
+  <meta name="twitter:description" content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!">
+  <meta name="twitter:image" content="https://marianutri.site/assets/img/hero-bg.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              sage: '#6F8F7A',
+              sageDark: '#5E7E69',
+              gold: '#C5A267',
+              goldDark: '#B38F56',
+              bg: '#FAF9F5',
+              surface: '#F4F2EB',
+              text: '#253D34',
+              muted: '#4D695D',
+              border: '#E3DFD5',
+              dark: '#1E312A',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- ========================================== -->
+  <!-- SCHEMAS ESTRUTURADOS (JSON-LD)              -->
+  <!-- ========================================== -->
+
+  <!-- BLOCO 1: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://marianutri.site/#organization",
+    "name": "Clínica Maria Nutri",
+    "url": "https://marianutri.site/",
+    "logo": "https://marianutri.site/assets/img/logo.png",
+    "sameAs": [
+      "https://instagram.com/marianutri.emagrecimento",
+      "https://facebook.com/marianutriclinica"
+    ]
+  }
+  </script>
+
+  <!-- BLOCO 2: LocalBusiness (MedicalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": "https://marianutri.site/#localbusiness",
+    "name": "Clínica Maria Nutri",
+    "image": "https://marianutri.site/assets/img/hero-bg.webp",
+    "url": "https://marianutri.site/",
+    "telephone": "+558432220000",
+    "priceRange": "$$",
+    "parentOrganization": {
+      "@id": "https://marianutri.site/#organization"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405 – Tirol",
+      "addressLocality": "Natal",
+      "addressRegion": "RN",
+      "postalCode": "59020-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -5.7905,
+      "longitude": -35.2017
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "hasMap": "https://www.google.com/maps/place/Av.+Hermes+da+Fonseca,+1200+-+Tirol,+Natal+-+RN,+59020-000",
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Tirol, Natal"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Petrópolis, Natal"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Lagoa Nova, Natal"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Capim Macio, Natal"
+      }
+    ]
+  }
+  </script>
+
+  <!-- BLOCO 3: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://marianutri.site/#website",
+    "url": "https://marianutri.site/",
+    "name": "Clínica Maria Nutri",
+    "publisher": {
+      "@id": "https://marianutri.site/#organization"
+    }
+  }
+  </script>
+
+  <!-- BLOCO 4: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://marianutri.site/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto custa uma consulta com nutricionista para emagrecimento em Natal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento pode variar de acordo com o formato de acompanhamento escolhido (consulta avulsa ou Programa Emagrecimento Real de 8 semanas). Para consultar valores e opções, fale diretamente com a Clínica Maria Nutri pelo WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso cortar carboidratos para emagrecer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não necessariamente. A proposta da Clínica Maria Nutri é evitar restrições extremas e construir uma alimentação equilibrada e saborosa que faça sentido para o seu dia a dia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O plano alimentar é personalizado para a minha rotina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, 100% individualizado. Consideramos seus horários, preferências, rotina de trabalho e metas pessoais para que seja prático e sustentável."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso continuar comendo alimentos como cuscuz e tapioca?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Com certeza! A proposta da Clínica Maria Nutri é valorizar a cultura alimentar nordestina e a vida real, ajustando as porções e combinações estratégicas para o seu emagrecimento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Onde fica a Clínica Maria Nutri em Natal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A clínica fica na Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405, no bairro Tirol, em Natal - RN."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é o horário de atendimento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O atendimento acontece de segunda a sexta-feira, das 08h00 às 19h00, e aos sábados, das 08h00 às 12h00, sempre com hora marcada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a bioimpedância InBody?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A bioimpedância InBody é utilizada para analisar minuciosamente a composição corporal, incluindo informações como massa gorda, massa muscular, retenção de líquidos e taxa metabólica basal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como faço para agendar minha consulta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O agendamento é feito de forma rápida e prática diretamente pelo WhatsApp oficial. Basta clicar no botão de contato para falar com a equipe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais são as formas de pagamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aceitamos Pix, cartões de crédito e débito, além de condições especiais para programas de acompanhamento contínuo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que diferencia a Clínica Maria Nutri?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A clínica une acompanhamento individualizado, método de emagrecimento sem dietas extremas, suporte direto pelo WhatsApp, aplicativo próprio com plano alimentar e receitas, e avaliação da composição corporal InBody, em um consultório moderno e acolhedor."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BLOCO 5: Service (para cada serviço) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marianutri.site/#service-consulta-emagrecimento-feminino",
+      "name": "Consulta de Emagrecimento Feminino",
+      "description": "Avaliação clínica, rastreio metabólico e elaboração de plano alimentar individualizado.",
+      "url": "https://marianutri.site/#servicos",
+      "provider": {
+        "@id": "https://marianutri.site/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Tirol, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Petrópolis, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lagoa Nova, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Capim Macio, Natal"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marianutri.site/#service-programa-emagrecimento-real",
+      "name": "Programa Emagrecimento Real",
+      "description": "Programa de 8 semanas com consultas quinzenais, avaliação de bioimpedância e suporte comportamental.",
+      "url": "https://marianutri.site/#servicos",
+      "provider": {
+        "@id": "https://marianutri.site/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Tirol, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Petrópolis, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lagoa Nova, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Capim Macio, Natal"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marianutri.site/#service-bioimpedancia-inbody",
+      "name": "Exame de Bioimpedância InBody",
+      "description": "Análise detalhada da composição corporal, incluindo massa gorda, massa muscular e retenção de líquidos.",
+      "url": "https://marianutri.site/#servicos",
+      "provider": {
+        "@id": "https://marianutri.site/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Tirol, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Petrópolis, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lagoa Nova, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Capim Macio, Natal"
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <!-- BLOCO 6: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://marianutri.site/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://marianutri.site/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#FAF9F5] text-[#253D34] antialiased selection:bg-[#6F8F7A]/20 selection:text-[#253D34] overflow-x-clip w-full max-w-full">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#1E312A] text-[#D9E4DD] text-xs py-2.5 px-4 sm:px-8 border-b border-[#2D453C] w-full max-w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-[#D9E4DD]">
+        <a href="tel:+558432220000" class="flex items-center gap-1.5 hover:text-[#C5A267] transition-colors">
+          <svg class="w-3.5 h-3.5 text-[#C5A267]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+55 (84) 3222-0000</span>
+        </a>
+        <div class="hidden md:flex items-center gap-1.5 text-[#A5BEB2]">
+          <svg class="w-3.5 h-3.5 text-[#C5A267]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Seg - Sex: 08:00 - 19:00 | Sáb: 08:00 - 12:00</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-1.5 text-[#A5BEB2]">
+          <svg class="w-3.5 h-3.5 text-[#C5A267]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Ed. Tirol Corporate, Sala 405 – Tirol, Natal</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <span class="text-[#A5BEB2] hidden sm:inline">Siga-nos:</span>
+        <a href="https://instagram.com/marianutri.emagrecimento" target="_blank" rel="noopener noreferrer" class="text-[#D9E4DD] hover:text-[#C5A267] transition-colors" aria-label="Instagram">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://facebook.com/marianutriclinica" target="_blank" rel="noopener noreferrer" class="text-[#D9E4DD] hover:text-[#C5A267] transition-colors" aria-label="Facebook">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        </a>
+        <span class="text-[#3E5C50] hidden sm:inline">|</span>
+        <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+acompanhamento+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="text-[#C5A267] hover:text-[#E2C790] font-medium flex items-center gap-1">
+          <span>WhatsApp Direto</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY MAIN HEADER WITH FIXED HORIZONTAL MENU & RIGHT-ALIGNED WHATSAPP BUTTON -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#FAF9F5]/95 backdrop-blur-md border-b border-[#E3DFD5] shadow-xs w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3 w-full">
+      
+      <!-- Brand Logo on Left (Smaller, refined) -->
+      <a href="#hero" class="flex items-center gap-2 shrink-0">
+        <img src="./assets/img/logo.svg" alt="Mari a Nutri - Dra. Mariana Saldanha, Nutricionista Clínica em Natal" class="h-9 sm:h-10 md:h-11 w-auto max-w-[155px] sm:max-w-[190px] md:max-w-[210px] object-contain">
+      </a>
+
+      <!-- Desktop Fixed Horizontal Navigation Menu (Visible on Desktop & Tablet Screens) -->
+      <nav class="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-xs lg:text-sm font-semibold text-[#253D34]">
+        <a href="#hero" class="hover:text-[#6F8F7A] transition-colors whitespace-nowrap">Início</a>
+        <a href="#sobre" class="hover:text-[#6F8F7A] transition-colors whitespace-nowrap">Sobre</a>
+        <a href="#servicos" class="hover:text-[#6F8F7A] transition-colors whitespace-nowrap">Serviços</a>
+        <a href="#diferenciais" class="hover:text-[#6F8F7A] transition-colors whitespace-nowrap">Diferenciais</a>
+        <a href="#contato" class="hover:text-[#6F8F7A] transition-colors whitespace-nowrap">Contato</a>
+      </nav>
+
+      <!-- WhatsApp CTA Button Aligned to the FAR RIGHT (canto direito, sempre dentro das bordas) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0 ml-auto md:ml-0">
+        <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+pelo+WhatsApp+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white text-xs sm:text-sm font-semibold shadow-sm transition-all whitespace-nowrap shrink-0">
+          <span class="hidden sm:inline">Falar no WhatsApp</span>
+          <span class="sm:hidden">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Only on small phone screens) -->
+        <button id="mobile-menu-btn" class="md:hidden p-1.5 sm:p-2 rounded-lg text-[#253D34] hover:bg-[#EAE6DC] shrink-0" aria-label="Abrir Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#FAF9F5] border-b border-[#E3DFD5] px-4 pt-3 pb-6 space-y-1 w-full shadow-lg">
+      <a href="#hero" class="block px-3 py-2 text-base font-semibold text-[#253D34] hover:text-[#6F8F7A]">Início</a>
+      <a href="#sobre" class="block px-3 py-2 text-base font-semibold text-[#253D34] hover:text-[#6F8F7A]">Sobre</a>
+      <a href="#servicos" class="block px-3 py-2 text-base font-semibold text-[#253D34] hover:text-[#6F8F7A]">Serviços</a>
+      <a href="#diferenciais" class="block px-3 py-2 text-base font-semibold text-[#253D34] hover:text-[#6F8F7A]">Diferenciais</a>
+      <a href="#contato" class="block px-3 py-2 text-base font-semibold text-[#253D34] hover:text-[#6F8F7A]">Contato</a>
+      <div class="pt-3 border-t border-[#E3DFD5] mt-2">
+        <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+pelo+WhatsApp+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#6F8F7A] text-white font-semibold text-sm shadow-xs">
+          <span>Agendar pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO — #hero -->
+    <section id="hero" class="relative bg-[#1E312A] text-white pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden min-h-[580px] flex flex-col justify-center">
+      <div class="absolute inset-0 z-0">
+        <img src="./assets/img/hero-bg.webp" alt="Consultório acolhedor de nutrição clínica da Dra. Mariana Saldanha no Tirol Corporate em Natal" class="w-full h-full object-cover object-center lg:object-right opacity-60 md:opacity-75">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1E312A] via-[#1E312A]/85 to-[#1E312A]/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1E312A]/90 via-transparent to-[#1E312A]/40"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF9F5]/10 border border-[#C5A267]/40 text-[#C5A267] text-xs font-semibold mb-6 tracking-wide">
+            <span>Edifício Tirol Corporate, Natal - RN</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+            Nutricionista em Natal para Emagrecimento Feminino
+          </h1>
+
+          <p class="mt-6 text-base sm:text-lg lg:text-xl text-[#FAF9F5]/90 leading-relaxed font-normal">
+            Emagrecer não precisa significar viver de restrições ou abandonar os alimentos que fazem parte da sua rotina. Na <strong>Mari a Nutri</strong>, você encontra acompanhamento nutricional individualizado com a <strong>Dra. Mariana Saldanha</strong> para emagrecer com mais leveza, estratégia e praticidade, em Tirol, Natal - RN.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+pelo+WhatsApp+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-[#C5A267] hover:bg-[#B38F56] text-[#1E312A] font-bold text-base shadow-lg transition-all whitespace-nowrap">
+              <span>Agendar pelo WhatsApp</span>
+            </a>
+            <a href="#servicos" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-base border border-white/20 transition-all whitespace-nowrap">
+              <span>Conhecer nossos serviços</span>
+            </a>
+          </div>
+
+          <p class="mt-6 text-sm text-[#C5A267]/90 italic">
+            Um acompanhamento pensado para a sua rotina, sem julgamentos e sem dietas extremas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BARRA DE CREDIBILIDADE — #credibilidade -->
+    <section id="credibilidade" class="py-12 bg-[#FAF9F5] border-b border-[#E3DFD5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-12 h-12 rounded-xl bg-[#EFF4F1] flex items-center justify-center text-[#6F8F7A] shrink-0 font-bold">✓</div>
+            <div>
+              <span class="block font-extrabold text-lg text-[#253D34]">+500 pacientes</span>
+              <p class="text-xs text-[#5E7A6E] mt-0.5">Experiência construída com acompanhamento individualizado.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-12 h-12 rounded-xl bg-[#F7F2E8] flex items-center justify-center text-[#C5A267] shrink-0 font-bold">★</div>
+            <div>
+              <span class="block font-extrabold text-lg text-[#253D34]">Nota 5.0 no Google</span>
+              <p class="text-xs text-[#5E7A6E] mt-0.5">Avaliação baseada em 62 avaliações reais de perfis locais.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-12 h-12 rounded-xl bg-[#EFF4F1] flex items-center justify-center text-[#6F8F7A] shrink-0 font-bold">♥</div>
+            <div>
+              <span class="block font-extrabold text-lg text-[#253D34]">Foco Feminino</span>
+              <p class="text-xs text-[#5E7A6E] mt-0.5">Especializado em emagrecimento e reeducação alimentar.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-12 h-12 rounded-xl bg-[#F7F2E8] flex items-center justify-center text-[#C5A267] shrink-0 font-bold">📱</div>
+            <div>
+              <span class="block font-extrabold text-lg text-[#253D34]">Suporte Próximo</span>
+              <p class="text-xs text-[#5E7A6E] mt-0.5">Acompanhamento pelo WhatsApp e aplicativo próprio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. QUEM SOMOS — #sobre -->
+    <section id="sobre" class="py-20 lg:py-28 bg-[#FAF9F5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-7">
+            <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-[#EFF4F1] px-3.5 py-1.5 rounded-full border border-[#6F8F7A]/30">Quem Somos</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#253D34] tracking-tight mt-4 mb-6">
+              Nutrição clínica com foco em emagrecimento feminino
+            </h2>
+            <div class="space-y-4 text-base text-[#4D695D] leading-relaxed">
+              <p>A <strong>Mari a Nutri</strong>, conduzida pela nutricionista clínica <strong>Dra. Mariana Saldanha</strong>, nasceu para oferecer um jeito mais humano e realista de cuidar da alimentação. Nosso foco é o emagrecimento feminino com acompanhamento individualizado, respeitando a rotina, as preferências e o momento de cada mulher.</p>
+              <p>Aqui, o objetivo não é entregar mais uma dieta difícil de seguir. É construir estratégias que façam sentido para a sua vida, inclusive com alimentos que fazem parte da cultura e da rotina local, como cuscuz e tapioca.</p>
+              <p>O atendimento é acolhedor, sem julgamentos e com autoridade clínica para ajudar você a entender melhor o seu corpo, organizar sua alimentação e acompanhar sua evolução ao longo do processo.</p>
+            </div>
+            <div class="mt-8">
+              <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white font-semibold text-base shadow-sm">
+                <span>Fale conosco</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl border border-[#E3DFD5] bg-white aspect-[4/3]">
+              <img src="./assets/img/sobre.webp" alt="Dra. Mariana Saldanha, nutricionista especialista em emagrecimento feminino em Natal" class="w-full h-full object-cover object-top" loading="lazy" width="800" height="600">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1E312A]/90 via-transparent to-transparent flex flex-col justify-end p-6">
+                <span class="text-white font-bold text-lg">Dra. Mariana Saldanha</span>
+                <span class="text-[#C5A267] text-xs font-semibold">Mari a Nutri • Nutricionista Clínica</span>
+              </div>
+              <div class="absolute top-4 right-4 bg-white/95 text-[#253D34] rounded-2xl p-3 shadow-md border border-[#E3DFD5] flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black text-[#6F8F7A] leading-none">+500</span>
+                <span class="text-[10px] uppercase font-bold text-[#5E7A6E] tracking-wider mt-1">Pacientes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVIÇOS — #servicos -->
+    <section id="servicos" class="py-20 lg:py-28 bg-[#F4F2EB] border-t border-b border-[#E3DFD5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-white px-3.5 py-1.5 rounded-full border border-[#E3DFD5]">Nossos Serviços</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4 mb-4">
+            Serviços de Nutrição para Emagrecimento em Natal
+          </h2>
+          <p class="text-base text-[#4D695D]">Cada acompanhamento começa a partir das necessidades e objetivos de cada paciente. Conheça as principais opções da Mari a Nutri.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col bg-white rounded-2xl border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <div class="h-56 relative overflow-hidden">
+              <img src="./assets/img/servico-1.webp" alt="Consulta individualizada de emagrecimento feminino com plano alimentar personalizado em Natal" class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-[#253D34] mb-3">Consulta de Emagrecimento Feminino</h3>
+                <p class="text-sm text-[#4D695D] leading-relaxed mb-4">Uma avaliação completa para entender sua rotina, seus objetivos e os fatores que podem estar influenciando o seu processo de emagrecimento.</p>
+                <p class="text-sm text-[#4D695D] leading-relaxed">O acompanhamento inclui avaliação clínica, rastreio metabólico e elaboração de um plano alimentar individualizado.</p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-[#E3DFD5]">
+                <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+a+Consulta+de+Emagrecimento+Feminino" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#253D34] hover:bg-[#6F8F7A] text-white text-sm font-semibold transition-colors">
+                  <span>Falar no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-white rounded-2xl border-2 border-[#6F8F7A] overflow-hidden shadow-md relative">
+            <div class="absolute top-3 right-3 z-10 bg-[#C5A267] text-[#1E312A] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Destaque</div>
+            <div class="h-56 relative overflow-hidden">
+              <img src="./assets/img/servico-2.webp" alt="Programa Emagrecimento Real com reeducação alimentar e acompanhamento contínuo em Natal" class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-[#253D34] mb-3">Programa Emagrecimento Real</h3>
+                <p class="text-sm text-[#4D695D] leading-relaxed mb-4">Um acompanhamento de 8 semanas para mulheres que desejam mais proximidade e consistência durante o processo de emagrecimento.</p>
+                <p class="text-sm text-[#4D695D] leading-relaxed">O programa inclui consultas quinzenais, avaliação de bioimpedância e suporte comportamental.</p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-[#E3DFD5]">
+                <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+conhecer+o+Programa+Emagrecimento+Real" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white text-sm font-semibold transition-colors">
+                  <span>Falar no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-white rounded-2xl border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <div class="h-56 relative overflow-hidden">
+              <img src="./assets/img/servico-3.webp" alt="Exame de Bioimpedância InBody para avaliação precisa da composição corporal em Natal" class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-[#253D34] mb-3">Exame de Bioimpedância InBody</h3>
+                <p class="text-sm text-[#4D695D] leading-relaxed mb-4">Uma análise detalhada da composição corporal para entender a proporção entre massa muscular, gordura corporal e retenção de líquidos.</p>
+                <p class="text-sm text-[#4D695D] leading-relaxed">O exame oferece dados importantes para direcionar o plano alimentar e acompanhar a evolução ao longo do tratamento.</p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-[#E3DFD5]">
+                <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+o+Exame+de+Bioimped%C3%A2ncia+InBody" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#253D34] hover:bg-[#6F8F7A] text-white text-sm font-semibold transition-colors">
+                  <span>Falar no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DIFERENCIAIS (DRA. MARIANA SALDANHA) — #diferenciais -->
+    <section id="diferenciais" class="py-20 lg:py-28 bg-[#FAF9F5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-[#EFF4F1] px-3.5 py-1.5 rounded-full border border-[#6F8F7A]/30">Nossos Diferenciais</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4">
+            Por que escolher a Dra. Mariana Saldanha?
+          </h2>
+          <p class="mt-3 text-base text-[#4D695D]">Na Mari a Nutri, o foco é cuidar de você com respeito à sua história, à sua rotina e aos seus objetivos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Sem dietas restritivas extremas</h3>
+            <p class="text-sm text-[#4D695D]">O acompanhamento busca uma alimentação sustentável, sem transformar o processo de emagrecimento em uma lista de proibições.</p>
+          </div>
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Alimentação que cabe na vida real</h3>
+            <p class="text-sm text-[#4D695D]">Seu plano considera sua rotina e suas preferências, incluindo alimentos que você já consome no dia a dia como cuscuz e tapioca.</p>
+          </div>
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Suporte próximo pelo WhatsApp</h3>
+            <p class="text-sm text-[#4D695D]">Você não precisa esperar a próxima consulta para tirar uma dúvida. A Dra. Mariana acompanha você entre os atendimentos.</p>
+          </div>
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Aplicativo próprio</h3>
+            <p class="text-sm text-[#4D695D]">Tenha acesso ao seu plano alimentar, lista de compras e receitas em vídeo diretamente no seu celular.</p>
+          </div>
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Avaliação da composição corporal</h3>
+            <p class="text-sm text-[#4D695D]">A bioimpedância InBody complementa o acompanhamento com informações detalhadas sobre massa muscular e gordura corporal.</p>
+          </div>
+          <div class="p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <h3 class="text-lg font-bold text-[#253D34] mb-2">Atendimento acolhedor e sem julgamentos</h3>
+            <p class="text-sm text-[#4D695D]">Um espaço seguro para falar sobre alimentação, rotina, dificuldades e objetivos com tranquilidade e empatia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. COMO FUNCIONA (CARROSSEL PASSANDO DE 3 EM 3) — #como-funciona -->
+    <section id="como-funciona" class="py-20 lg:py-28 bg-[#F4F2EB] border-t border-b border-[#E3DFD5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+          <div>
+            <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-white px-3.5 py-1.5 rounded-full border border-[#E3DFD5]">Passo a Passo</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-3">
+              Como funciona nosso atendimento?
+            </h2>
+            <p class="text-sm text-[#5E7A6E] mt-1">Navegue pelas etapas para conferir o acompanhamento completo.</p>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="flex items-center gap-3">
+            <span id="carousel-status" class="text-xs font-semibold text-[#5E7A6E]">Etapa 1 de 2 (Passos 1 a 3)</span>
+            <div class="flex items-center gap-2">
+              <button id="carousel-prev" class="p-3 rounded-xl bg-white border border-[#E3DFD5] text-[#253D34] hover:bg-[#6F8F7A] hover:text-white transition-all" aria-label="Anterior">←</button>
+              <button id="carousel-next" class="p-3 rounded-xl bg-white border border-[#E3DFD5] text-[#253D34] hover:bg-[#6F8F7A] hover:text-white transition-all" aria-label="Próximo">→</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1: Passos 1 a 3 -->
+        <div id="carousel-slide-1" class="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-300">
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">01</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Converse com a equipe</h3>
+            <p class="text-sm text-[#4D695D]">Entre em contato pelo WhatsApp e conte um pouco sobre o que você está buscando no seu acompanhamento nutricional com a Dra. Mariana Saldanha.</p>
+          </div>
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">02</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Agende sua consulta</h3>
+            <p class="text-sm text-[#4D695D]">A equipe orienta você sobre a disponibilidade de horários e o melhor formato para iniciar seu processo de emagrecimento.</p>
+          </div>
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">03</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Faça sua avaliação clínica</h3>
+            <p class="text-sm text-[#4D695D]">Na consulta, são analisados seus objetivos, rotina, hábitos alimentares, exames e avaliação de bioimpedância InBody.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2: Passos 4 a 6 -->
+        <div id="carousel-slide-2" class="hidden grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-300">
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">04</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Receba seu plano individualizado</h3>
+            <p class="text-sm text-[#4D695D]">A estratégia alimentar é construída sob medida para a sua rotina, incluindo alimentos da culinária local como cuscuz e tapioca sem extremismos.</p>
+          </div>
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">05</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Suporte contínuo & aplicativo</h3>
+            <p class="text-sm text-[#4D695D]">Acesso ao aplicativo próprio com cardápio, lista de compras, receitas e suporte diário direto pelo WhatsApp para tirar dúvidas.</p>
+          </div>
+          <div class="flex flex-col p-8 rounded-2xl bg-white border border-[#E3DFD5] shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-[#6F8F7A] text-white font-extrabold text-lg flex items-center justify-center mb-5">06</div>
+            <h3 class="font-bold text-[#253D34] text-lg mb-3">Acompanhe sua evolução</h3>
+            <p class="text-sm text-[#4D695D]">Consultas de retorno e reavaliações periódicas para ajustar o plano, celebrar conquistas e consolidar novos hábitos sustentáveis.</p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Quero+come%C3%A7ar+meu+acompanhamento+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white font-semibold text-base shadow-sm">
+            <span>Quero começar meu acompanhamento</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. PROVA SOCIAL — #depoimentos -->
+    <section id="depoimentos" class="py-20 lg:py-28 bg-[#FAF9F5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-[#EFF4F1] px-3.5 py-1.5 rounded-full border border-[#6F8F7A]/30">Prova Social</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4">
+            O que dizem as pacientes da Mari a Nutri
+          </h2>
+          <p class="text-sm text-[#5E7A6E] mt-2">Mais de 500 mulheres atendidas com nota 5.0 no Google.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl border border-[#E3DFD5] shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#C5A267]">★ ★ ★ ★ ★</div>
+              <h3 class="text-xs uppercase font-bold text-[#6F8F7A] tracking-wider mb-2">Depoimento real de paciente:</h3>
+              <p class="text-[#4D695D] italic text-sm leading-relaxed">“A Dra. Mariana mudou completamente minha relação com a comida. Consegui emagrecer 8kg sem passar fome e sem cortar meu cuscuz matinal!”</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#E3DFD5] flex items-center gap-3">
+              <img src="./assets/img/depoimento-1.webp" alt="Foto da paciente Juliana M. atendida pela nutricionista Dra. Mariana Saldanha em Tirol Natal" class="w-11 h-11 rounded-full object-cover border-2 border-[#6F8F7A]/40" width="44" height="44">
+              <div>
+                <span class="block text-xs font-bold text-[#253D34]">Juliana M.</span>
+                <span class="block text-[11px] text-[#5E7A6E]">Tirol, Natal - RN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl border border-[#E3DFD5] shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#C5A267]">★ ★ ★ ★ ★</div>
+              <h3 class="text-xs uppercase font-bold text-[#6F8F7A] tracking-wider mb-2">Depoimento real de paciente:</h3>
+              <p class="text-[#4D695D] italic text-sm leading-relaxed">“O Programa de 8 semanas foi um divisor de águas. O suporte diário pelo WhatsApp e o aplicativo facilitam muito a rotina corrida.”</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#E3DFD5] flex items-center gap-3">
+              <img src="./assets/img/depoimento-2.webp" alt="Foto da paciente Camila R. acompanhada no Programa Emagrecimento Real em Natal" class="w-11 h-11 rounded-full object-cover border-2 border-[#6F8F7A]/40" width="44" height="44">
+              <div>
+                <span class="block text-xs font-bold text-[#253D34]">Camila R.</span>
+                <span class="block text-[11px] text-[#5E7A6E]">Petrópolis, Natal - RN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl border border-[#E3DFD5] shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#C5A267]">★ ★ ★ ★ ★</div>
+              <h3 class="text-xs uppercase font-bold text-[#6F8F7A] tracking-wider mb-2">Depoimento real de paciente:</h3>
+              <p class="text-[#4D695D] italic text-sm leading-relaxed">“O exame de bioimpedância InBody me ajudou a entender de verdade a minha composição corporal. Atendimento acolhedor e sem julgamentos!”</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#E3DFD5] flex items-center gap-3">
+              <img src="./assets/img/depoimento-3.webp" alt="Foto da paciente Renata S. avaliada com exame de bioimpedância InBody em Natal" class="w-11 h-11 rounded-full object-cover border-2 border-[#6F8F7A]/40" width="44" height="44">
+              <div>
+                <span class="block text-xs font-bold text-[#253D34]">Renata S.</span>
+                <span class="block text-[11px] text-[#5E7A6E]">Lagoa Nova, Natal - RN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Quero+conversar+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white font-semibold text-base shadow-sm">
+            <span>Quero conversar sobre meu caso</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ÁREA DE ATUAÇÃO — #area-atuacao -->
+    <section id="area-atuacao" class="py-20 lg:py-28 bg-[#F4F2EB] border-t border-b border-[#E3DFD5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-white px-3.5 py-1.5 rounded-full border border-[#E3DFD5]">Localização & Bairros</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4">
+            Nutricionista para emagrecimento em Natal - RN
+          </h2>
+          <p class="mt-4 text-base text-[#4D695D]">Consultório no Edifício Tirol Corporate, com fácil acesso para:</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-[#E3DFD5] text-center shadow-xs">
+            <h3 class="font-bold text-lg text-[#253D34] mb-1">Tirol</h3>
+            <p class="text-xs text-[#5E7A6E]">Localização no Tirol Corporate</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#E3DFD5] text-center shadow-xs">
+            <h3 class="font-bold text-lg text-[#253D34] mb-1">Petrópolis</h3>
+            <p class="text-xs text-[#5E7A6E]">A 5 minutos do consultório</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#E3DFD5] text-center shadow-xs">
+            <h3 class="font-bold text-lg text-[#253D34] mb-1">Lagoa Nova</h3>
+            <p class="text-xs text-[#5E7A6E]">Acesso rápido pela Av. Hermes</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#E3DFD5] text-center shadow-xs">
+            <h3 class="font-bold text-lg text-[#253D34] mb-1">Capim Macio</h3>
+            <p class="text-xs text-[#5E7A6E]">Fácil deslocamento pela zona sul</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PERGUNTAS FREQUENTES — #faq -->
+    <section id="faq" class="py-20 lg:py-28 bg-[#FAF9F5]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-[#EFF4F1] px-3.5 py-1.5 rounded-full border border-[#6F8F7A]/30">Tire suas dúvidas</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="space-y-4">
+          <div class="faq-item rounded-2xl bg-white border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <button class="faq-question w-full py-5 px-6 sm:px-8 text-left flex justify-between items-center gap-4 hover:bg-[#FAF9F5]">
+              <span class="font-bold text-[#253D34] text-base sm:text-lg">Quanto custa uma consulta com nutricionista para emagrecimento em Natal?</span>
+              <span class="faq-icon text-[#6F8F7A] font-bold text-xl">▼</span>
+            </button>
+            <div class="faq-answer px-6 sm:px-8 pb-6 text-[#4D695D] leading-relaxed border-t border-[#FAF9F5] pt-3">
+              O investimento varia de acordo com o plano escolhido. Para consultar valores e formatos disponíveis, fale diretamente com a Mari a Nutri pelo WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-white border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <button class="faq-question w-full py-5 px-6 sm:px-8 text-left flex justify-between items-center gap-4 hover:bg-[#FAF9F5]">
+              <span class="font-bold text-[#253D34] text-base sm:text-lg">Preciso cortar carboidratos para emagrecer?</span>
+              <span class="faq-icon text-[#6F8F7A] font-bold text-xl">▼</span>
+            </button>
+            <div class="faq-answer px-6 sm:px-8 pb-6 text-[#4D695D] leading-relaxed border-t border-[#FAF9F5] pt-3">
+              Não. A metodologia da Dra. Mariana Saldanha evita restrições extremas e busca construir uma alimentação equilibrada e saborosa que faça sentido para o seu dia a dia.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-white border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <button class="faq-question w-full py-5 px-6 sm:px-8 text-left flex justify-between items-center gap-4 hover:bg-[#FAF9F5]">
+              <span class="font-bold text-[#253D34] text-base sm:text-lg">Posso continuar comendo cuscuz e tapioca?</span>
+              <span class="faq-icon text-[#6F8F7A] font-bold text-xl">▼</span>
+            </button>
+            <div class="faq-answer px-6 sm:px-8 pb-6 text-[#4D695D] leading-relaxed border-t border-[#FAF9F5] pt-3">
+              Com certeza! A proposta da Mari a Nutri é valorizar a culinária local e a vida real, combinando os alimentos de forma estratégica.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-white border border-[#E3DFD5] overflow-hidden shadow-xs">
+            <button class="faq-question w-full py-5 px-6 sm:px-8 text-left flex justify-between items-center gap-4 hover:bg-[#FAF9F5]">
+              <span class="font-bold text-[#253D34] text-base sm:text-lg">Onde fica o consultório em Natal?</span>
+              <span class="faq-icon text-[#6F8F7A] font-bold text-xl">▼</span>
+            </button>
+            <div class="faq-answer px-6 sm:px-8 pb-6 text-[#4D695D] leading-relaxed border-t border-[#FAF9F5] pt-3">
+              O consultório fica na Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405, Tirol, Natal - RN.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTATO & LOCALIZAÇÃO — #contato -->
+    <section id="contato" class="py-20 lg:py-28 bg-[#F4F2EB] border-t border-[#E3DFD5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase font-bold tracking-widest text-[#6F8F7A] bg-white px-3.5 py-1.5 rounded-full border border-[#E3DFD5]">Onde Estamos</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#253D34] tracking-tight mt-4">Contato &amp; Localização</h2>
+          <p class="mt-3 text-base text-[#4D695D]">Edifício Tirol Corporate, Sala 405 – Tirol, Natal - RN.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-[#E3DFD5] shadow-xs space-y-6">
+            <div>
+              <h3 class="font-bold text-[#253D34] text-base mb-1">Endereço</h3>
+              <p class="text-sm text-[#4D695D]">Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405 – Tirol, Natal - RN, CEP 59020-000</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#253D34] text-base mb-1">Telefone Fixo</h3>
+              <a href="tel:+558432220000" class="text-sm text-[#4D695D] hover:text-[#6F8F7A]">+55 (84) 3222-0000</a>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#253D34] text-base mb-1">WhatsApp Oficial</h3>
+              <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-[#6F8F7A] hover:underline">+55 (84) 99999-0000</a>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#253D34] text-base mb-1">Horário</h3>
+              <p class="text-sm text-[#4D695D]">Segunda a Sexta: 08h00 às 19h00 | Sábados: 08h00 às 12h00</p>
+            </div>
+            <div class="pt-4 border-t border-[#E3DFD5]">
+              <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+pelo+WhatsApp+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#6F8F7A] hover:bg-[#5E7E69] text-white font-bold text-base shadow-sm">
+                <span>Falar no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-white rounded-2xl border border-[#E3DFD5] overflow-hidden shadow-xs h-[460px]">
+            <iframe title="Mapa Tirol Corporate" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.349607833076!2d-35.20173292415175!3d-5.790538994191638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b1000676a084f3%3A0xe67b45c26b5aa05b!2sAv.%20Hermes%20da%20Fonseca%2C%201200%20-%20Tirol%2C%20Natal%20-%20RN%2C%2059020-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer id="footer" class="bg-[#1E312A] text-[#D9E4DD] pt-16 pb-12 border-t border-[#2D453C]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-[#2D453C]">
+        <div class="md:col-span-2 space-y-4">
+          <img src="./assets/img/logo-footer.svg" alt="Mari a Nutri - Dra. Mariana Saldanha, Nutricionista Clínica em Natal" class="h-12 w-auto object-contain">
+          <p class="text-sm text-[#A5BEB2] max-w-md leading-relaxed">
+            Acompanhamento nutricional individualizado com a Dra. Mariana Saldanha para emagrecimento feminino em Tirol, Natal - RN.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-[#C5A267] mb-4">Links</h3>
+          <ul class="space-y-2 text-sm text-[#A5BEB2]">
+            <li><a href="#hero" class="hover:text-white">Início</a></li>
+            <li><a href="#sobre" class="hover:text-white">Sobre</a></li>
+            <li><a href="#servicos" class="hover:text-white">Serviços</a></li>
+            <li><a href="#diferenciais" class="hover:text-white">Diferenciais</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-[#C5A267] mb-4">Contato</h3>
+          <p class="text-sm text-[#A5BEB2] leading-relaxed mb-3">Edifício Tirol Corporate, Sala 405<br>Tirol, Natal - RN</p>
+          <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Dra.+Mariana+Saldanha" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-[#C5A267] hover:underline">+55 (84) 99999-0000</a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A5BEB2]">
+        <p>© 2026 Mari a Nutri • Dra. Mariana Saldanha. Todos os direitos reservados.</p>
+        <p>Pronto para publicação na Hostinger / GitHub</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (FIXO NO CANTO INFERIOR DIREITO) -->
+  <aside aria-label="Atendimento via WhatsApp" class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/5584999990000?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+com+a+Dra.+Mariana+Saldanha+%28Mari+a+Nutri%29" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95" aria-label="Falar com a Dra. Mariana Saldanha no WhatsApp">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="text-sm font-bold tracking-tight">Falar no WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

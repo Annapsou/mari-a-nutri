@@ -1,0 +1,57 @@
+/* Clínica Maria Nutri - Estilos Personalizados */
+
+html, body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #FAF9F5;
+  color: #253D34;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F2EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BFB4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F8F7A;
+}
+
+/* Transições Suaves */
+.transition-standard {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animações Pulsantes do Botão WhatsApp */
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.6);
+  }
+}
+
+.whatsapp-float-btn {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+.whatsapp-float-btn:hover {
+  animation: none;
+}

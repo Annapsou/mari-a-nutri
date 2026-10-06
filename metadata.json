@@ -1,0 +1,6 @@
+{
+  "name": "Clínica Maria Nutri - Nutricionista em Natal",
+  "description": "Acompanhamento nutricional individualizado para emagrecimento feminino, reeducação alimentar e melhoria da composição corporal em Tirol, Natal - RN.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

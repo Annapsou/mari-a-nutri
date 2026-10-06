@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+          var activeFetch = originalFetch;
+          var desc = {
+            get: function() { return activeFetch; },
+            set: function(v) { activeFetch = v; },
+            configurable: true,
+            enumerable: true
+          };
+          Object.defineProperty(window, 'fetch', desc);
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', desc);
+            } catch (e1) {}
+          }
+          if (typeof globalThis !== 'undefined' && globalThis !== window) {
+            try {
+              Object.defineProperty(globalThis, 'fetch', desc);
+            } catch (e2) {}
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>Nutricionista em Natal para Emagrecimento | Mari a Nutri</title>
+    <meta
+      name="description"
+      content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!"
+    />
+    <link rel="canonical" href="https://marianutri.site/" />
+
+    <!-- Favicons (Logo Oficial Mari a Nutri) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- OpenGraph & Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nutricionista em Natal para Emagrecimento | Mari a Nutri" />
+    <meta
+      property="og:description"
+      content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!"
+    />
+    <meta property="og:image" content="https://marianutri.site/assets/img/hero-bg.webp" />
+    <meta property="og:url" content="https://marianutri.site/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Mari a Nutri" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nutricionista em Natal para Emagrecimento | Mari a Nutri" />
+    <meta
+      name="twitter:description"
+      content="Emagreça com leveza e sem dietas extremas em Natal. Acompanhamento individualizado com a Dra. Mariana Saldanha. Agende sua consulta no WhatsApp!"
+    />
+    <meta name="twitter:image" content="https://marianutri.site/assets/img/hero-bg.webp" />
+
+    <!-- Google Fonts for elevated clinical typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========================================== -->
+    <!-- SCHEMAS ESTRUTURADOS (JSON-LD)              -->
+    <!-- ========================================== -->
+
+    <!-- BLOCO 1: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://marianutri.site/#organization",
+      "name": "Clínica Maria Nutri",
+      "url": "https://marianutri.site/",
+      "logo": "https://marianutri.site/assets/img/logo.png",
+      "sameAs": [
+        "https://instagram.com/marianutri.emagrecimento",
+        "https://facebook.com/marianutriclinica"
+      ]
+    }
+    </script>
+
+    <!-- BLOCO 2: LocalBusiness (MedicalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "@id": "https://marianutri.site/#localbusiness",
+      "name": "Clínica Maria Nutri",
+      "image": "https://marianutri.site/assets/img/hero-bg.webp",
+      "url": "https://marianutri.site/",
+      "telephone": "+558432220000",
+      "priceRange": "$$",
+      "parentOrganization": {
+        "@id": "https://marianutri.site/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405 – Tirol",
+        "addressLocality": "Natal",
+        "addressRegion": "RN",
+        "postalCode": "59020-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -5.7905,
+        "longitude": -35.2017
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "hasMap": "https://www.google.com/maps/place/Av.+Hermes+da+Fonseca,+1200+-+Tirol,+Natal+-+RN,+59020-000",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Tirol, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Petrópolis, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lagoa Nova, Natal"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Capim Macio, Natal"
+        }
+      ]
+    }
+    </script>
+
+    <!-- BLOCO 3: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://marianutri.site/#website",
+      "url": "https://marianutri.site/",
+      "name": "Clínica Maria Nutri",
+      "publisher": {
+        "@id": "https://marianutri.site/#organization"
+      }
+    }
+    </script>
+
+    <!-- BLOCO 4: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://marianutri.site/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa uma consulta com nutricionista para emagrecimento em Natal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O investimento pode variar de acordo com o formato de acompanhamento escolhido (consulta avulsa ou Programa Emagrecimento Real de 8 semanas). Para consultar valores e opções, fale diretamente com a Clínica Maria Nutri pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso cortar carboidratos para emagrecer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não necessariamente. A proposta da Clínica Maria Nutri é evitar restrições extremas e construir uma alimentação equilibrada e saborosa que faça sentido para o seu dia a dia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O plano alimentar é personalizado para a minha rotina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, 100% individualizado. Consideramos seus horários, preferências, rotina de trabalho e metas pessoais para que seja prático e sustentável."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso continuar comendo alimentos como cuscuz e tapioca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Com certeza! A proposta da Clínica Maria Nutri é valorizar a cultura alimentar nordestina e a vida real, ajustando as porções e combinações estratégicas para o seu emagrecimento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde fica a Clínica Maria Nutri em Natal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A clínica fica na Avenida Hermes da Fonseca, 1200, Edifício Tirol Corporate, Sala 405, no bairro Tirol, em Natal - RN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o horário de atendimento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O atendimento acontece de segunda a sexta-feira, das 08h00 às 19h00, e aos sábados, das 08h00 às 12h00, sempre com hora marcada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a bioimpedância InBody?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bioimpedância InBody é utilizada para analisar minuciosamente a composição corporal, incluindo informações como massa gorda, massa muscular, retenção de líquidos e taxa metabólica basal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como faço para agendar minha consulta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O agendamento é feito de forma rápida e prática diretamente pelo WhatsApp oficial. Basta clicar no botão de contato para falar com a equipe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as formas de pagamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceitamos Pix, cartões de crédito e débito, além de condições especiais para programas de acompanhamento contínuo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que diferencia a Clínica Maria Nutri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A clínica une acompanhamento individualizado, método de emagrecimento sem dietas extremas, suporte direto pelo WhatsApp, aplicativo próprio com plano alimentar e receitas, e avaliação da composição corporal InBody, em um consultório moderno e acolhedor."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BLOCO 5: Service (para cada serviço) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://marianutri.site/#service-consulta-emagrecimento-feminino",
+        "name": "Consulta de Emagrecimento Feminino",
+        "description": "Avaliação clínica, rastreio metabólico e elaboração de plano alimentar individualizado.",
+        "url": "https://marianutri.site/#servicos",
+        "provider": {
+          "@id": "https://marianutri.site/#localbusiness"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Tirol, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Petrópolis, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Lagoa Nova, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Capim Macio, Natal"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://marianutri.site/#service-programa-emagrecimento-real",
+        "name": "Programa Emagrecimento Real",
+        "description": "Programa de 8 semanas com consultas quinzenais, avaliação de bioimpedância e suporte comportamental.",
+        "url": "https://marianutri.site/#servicos",
+        "provider": {
+          "@id": "https://marianutri.site/#localbusiness"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Tirol, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Petrópolis, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Lagoa Nova, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Capim Macio, Natal"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://marianutri.site/#service-bioimpedancia-inbody",
+        "name": "Exame de Bioimpedância InBody",
+        "description": "Análise detalhada da composição corporal, incluindo massa gorda, massa muscular e retenção de líquidos.",
+        "url": "https://marianutri.site/#servicos",
+        "provider": {
+          "@id": "https://marianutri.site/#localbusiness"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Tirol, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Petrópolis, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Lagoa Nova, Natal"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Capim Macio, Natal"
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <!-- BLOCO 6: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://marianutri.site/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://marianutri.site/"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#FAF9F5] text-[#253D34] font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-[#6F8F7A]/20 selection:text-[#253D34] overflow-x-clip w-full max-w-full">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
